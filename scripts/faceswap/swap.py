@@ -48,7 +48,7 @@ class FaceSwap:
         self.resize_factor = resize_factor
         self.code_former_weight = code_former_weight
         self.face_restore_model = face_restore_model
-        self.model = self.faceswap_folder + "/model/inswapper_128.onnx"
+        self.model = self.faceswap_folder + "/model/simswap_256.onnx"
         self.faces_index = {face_index}
         self.ffmpeg_binary = self.find_ffmpeg_binary()
         model_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), self.model)
